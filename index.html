@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homeworks</title>
+    <style>
+      .js-button {
+        background-color: green;
+        border: none;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 10px;
+      }
+
+      .js-button:active{
+        background-color: red;
+      }
+
+      .extra-class{
+        background-color: red;
+      }
+
+      
+    </style>
 </head>
 <body>
+
+  <button class="js-button" onclick="changeButtonText()">On</button>
+
+  <hr>
+
+  <input class="js-name" />
+  <button class="sub" onclick="Submit">Submit</button>
+  <hr>
+  
+  <input type="text" class="input2" oninput="showInpitValue()" />
+  <h5 class="heading"></h5>
+    
+
+  <script>
+
+    function showInpitValue(){
+      console.log(event.target.value);
+      document.querySelector(".heading").innerText = event.target.value;
+    }
+
+    let inputValue = document.querySelector('.js-name');
+   
+
+    
+   
+   function changeButtonText(){
+    const btn = document.querySelector('.js-button');
+
+      if(btn.innerText === "On"){
+        btn.innerHTML = "Off";
+        btn.classList.contains('extra-class')
+      }else{
+        btn.innerHTML = "On";
+        btn.classList.contains('extra-class');
+      }
+    }
+    
+
+    
+  </script>
     
 </body>
 </html>
