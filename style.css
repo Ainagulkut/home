@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    
+}
+.text{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 800;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    gap: 10px;
+}
+.firstpicture{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: blueviolet;
+    
+    padding: 20px;
+    
+}
+.text1{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.price{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+
+
+.cha{
+    height: 200px;
+    width: 200px;
+}
+
+
