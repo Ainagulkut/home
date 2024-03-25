@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homeworks</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="root">
+        <div class="form-wrapper">
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" required id="username" name="username" />
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required />
+                <label for="userType">User Type:</label>
+                <select id="userType" name="userType" required>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
     
+                <button type="submit">Add Todo</button>
+            </form>
+        </div>
+        <div class="root-loading">
+            <div id="spinner" style="display: none"></div>
+            <div id="error" style="display: none"></div>
+        </div>
+    </div>
+    <div class="root-table">
+        <table id="table"></table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

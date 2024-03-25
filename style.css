@@ -1,0 +1,41 @@
+main{
+    display: flex;
+}
+.food-menu{
+    background-color: #f0e5fe;
+    height: 100vh;
+    margin: 0 auto;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    background-color: #6d5c97;
+    color: #fff;
+    box-shadow: 0px 0px 18px 2px(34,60.80,0.2);
+    display: flex;
+    width: 350px;
+    padding: 10px;
+    border-radius: 12px;
+    align-items: center;
+    gap: 20px;
+}
+.title{}
+
+.card-img{
+    width : 100px;
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-price{
+    margin: 0;
+    font-weight: 600;
+    font-size: 2;
+}
